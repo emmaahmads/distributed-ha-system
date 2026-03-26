@@ -1,4 +1,4 @@
-# Fault-Tolerant Distributed System (MSc. thesis)
+# Fault-Tolerant Distributed System 
 
 This project demonstrates the design of a fault-tolerant distributed system that achieves high availability through replication, heartbeat-based failure detection, and automated failover.
 
