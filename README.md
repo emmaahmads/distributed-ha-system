@@ -25,7 +25,7 @@ This architecture illustrates how client requests are routed through a proxy to 
 - Distributed systems architecture  
 - Fault tolerance and high availability  
 - Replication (data and state synchronization)  
-- Heartbeat-based failure detection  
+- Heartbeat-based adaptive failure detection  
 - Automated failover and recovery  
 - Load distribution via proxy  
 
@@ -63,7 +63,8 @@ This architecture illustrates how client requests are routed through a proxy to 
 ## Example implementation in a virtualized distributed system
 
 - Nodes send periodic heartbeats  
-- If no heartbeat is received within a timeout, the node is considered failed  
+- A timeout is maintained to adapt to network latency or potential system load on each node
+- If no heartbeat is received within an adaptive timeout, the node is considered failed  
 
 <p align="center">
   <img src="image/detection-example.png" width="400"/>
